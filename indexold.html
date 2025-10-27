@@ -1,58 +1,692 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bharat Agro Chemicals | Coming Soon</title>
+
+  <!-- Basic SEO -->
+  <title>Bharat Agro Chemicals - Certified Agrochemicals, Fertilizers & Farming Solutions</title>
+  <meta name="description" content="Shop certified agrochemicals, fertilizers, and crop solutions with Bharat Agro Chemicals. Boost your harvests with research-backed products, sustainable farming, and expert agronomy support across India.">
+  <meta name="keywords" content="Bharat Agro Chemicals, agriculture, fertilizers, agrochemicals, crop solutions, sustainable farming, bio-fertilizer, PGR, herbicide, insecticide, India, certified products, farm support">
+  <meta name="author" content="Bharat Agro Chemicals">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://bharatagrochemicals.com/" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bharat Agro Chemicals - Certified Agrochemicals & Fertilizer Solutions">
+  <meta property="og:description" content="Empowering farmers with certified agrochemicals, fertilizers, and crop solutions. Backed by science, trusted by growers across India.">
+  <meta property="og:url" content="https://bharatagrochemicals.com/">
+  <meta property="og:image" content="https://bharatagrochemicals.com/assets/images/og-banner.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bharat Agro Chemicals - Certified Agrochemicals & Sustainable Farming">
+  <meta name="twitter:description" content="Sustainable agrochemicals, fertilizers, and crop protection for modern Indian agriculture. Trusted, research-driven, and field-tested.">
+  <meta name="twitter:image" content="https://bharatagrochemicals.com/assets/images/og-banner.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+
+  <!-- Tailwind or other CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <style>
-    body {
-      background: linear-gradient(135deg, #ff8c00, #ffa733, #ffb84d);
-      background-size: 400% 400%;
-      animation: gradientFlow 8s ease infinite;
-    }
-
-    @keyframes gradientFlow {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .fade-in {
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    .slide-up {
-      animation: slideUp 1.5s ease-in-out forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+    /* Smooth transitions */
+    .transition-all {
+      transition: all 0.3s ease-in-out;
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen text-center text-white">
-  <div class="fade-in">
-    <img src="logo.jpg" alt="Bharat Agro Chemicals Logo" class="mx-auto w-40 mb-6 drop-shadow-xl">
+
+<body class="bg-white font-light text-lg text-gray-700 md:text-xl leading-relaxed">
+
+  <!-- Topbar: Responsive Helpline, Certification, Socials -->
+  <div class="bg-gray-900 py-2 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-4 px-4">
+      <div class="w-full md:w-auto flex-1 flex justify-center md:justify-start">
+        <p class="text-xs sm:text-sm text-white text-center">Helpline No. 8818002155</p>
+      </div>
+      <div class="w-full md:w-auto flex-1 flex justify-center">
+        <p class="text-xs sm:text-sm hidden md:block font-semibold text-white text-center">An ISO 9001:2015 Certified Company</p>
+      </div>
+      <div class="w-full md:w-auto flex-1 flex justify-center md:justify-end gap-4 mt-2 md:mt-0">
+        <a href="#" aria-label="Phone" class="hover:text-lime-400 text-lg"><i class="fas fa-phone-alt"></i></a>
+        <a href="#" aria-label="YouTube" class="hover:text-lime-400 text-lg"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram" class="hover:text-lime-400 text-lg"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </div>
 
-  <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide slide-up" style="animation-delay: 0.3s;">COMING SOON</h1>
-  <p class="text-lg md:text-xl mt-3 opacity-90 slide-up" style="animation-delay: 0.6s;">Our new website is launching soon.<br>Stay tuned for updates!</p>
+ <!-- header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <!-- Checkbox must be FIRST, so peer works -->
+    <input type="checkbox" id="menuToggle" class="hidden peer" />
 
-  <form class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3 slide-up" style="animation-delay: 0.9s;">
-    <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-full w-64 sm:w-80 text-gray-800 focus:outline-none">
-    <button class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all">Subscribe</button>
-  </form>
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <a href="#">
+          <img src="http://localhost/bharatagro/assets/images/logo.png"
+               alt="Bharat Agro Chemicals"
+               class="w-32 object-contain" />
+        </a>
+      </div>
 
-  <footer class="mt-10 text-sm text-gray-100 opacity-80 slide-up" style="animation-delay: 1.2s;">
-    © 2025 Bharat Agro Chemicals. All rights reserved.
-  </footer>
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex flex-1 justify-center">
+        <ul class="flex items-center gap-8">
+          <li><a href="../index.php" class="hover:text-lime-600 transition">Home</a></li>
+          <li><a href="../public/about.php" class="hover:text-lime-600 transition">About Us</a></li>
+          <li class="relative group">
+            <div class="flex items-center hover:text-lime-600 cursor-pointer">
+              <a href="../public/product.php">Our Products</a>
+              <svg class="ml-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </div>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 top-full bg-white shadow-lg rounded py-2 w-48 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-200 z-20">
+                              <li>
+                  <a href="../public/product.php?category=Insecticide"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    Insecticide                  </a>
+                </li>
+                              <li>
+                  <a href="../public/product.php?category=Fungicide"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    Fungicide                  </a>
+                </li>
+                              <li>
+                  <a href="../public/product.php?category=Herbicide"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    Herbicide                  </a>
+                </li>
+                              <li>
+                  <a href="../public/product.php?category=PGR"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    PGR                  </a>
+                </li>
+                              <li>
+                  <a href="../public/product.php?category=Fertilizer"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    Fertilizer                  </a>
+                </li>
+                              <li>
+                  <a href="../public/product.php?category=Bio-Fertilizer"
+                     class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                    Bio-Fertilizer                  </a>
+                </li>
+                          </ul>
+          </li>
+          <li><a href="../public/gallery.php" class="hover:text-lime-600 transition">Gallery</a></li>
+          <li><a href="contact-us.php" class="hover:text-lime-600 transition">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact-Now (Desktop only) -->
+      <div class="hidden md:block">
+        <a href="#contact"
+           class="inline-block bg-blue-900 text-sm text-lime-400 px-8 py-3 rounded shadow hover:bg-lime-400 hover:text-blue-900 transition">
+          Contact-Now
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <label for="menuToggle" class="md:hidden cursor-pointer text-3xl text-green-700 select-none">
+        <span class="peer-checked:hidden">☰</span>
+        <span class="hidden peer-checked:inline">✕</span>
+      </label>
+    </div>
+
+    <!-- Mobile Menu (must be sibling of the checkbox input) -->
+    <div
+      class="max-w-7xl mx-auto px-4 md:hidden
+             overflow-hidden transition-[max-height,opacity,padding] duration-300 ease-in-out
+             max-h-0 opacity-0 py-0
+             peer-checked:max-h-[calc(100vh-64px)] peer-checked:opacity-100 peer-checked:py-6"
+    >
+      <div class="bg-white rounded-lg shadow-inner flex flex-col items-start gap-4 text-lg ">
+        <a href="#" class="w-full block px-2 py-2 hover:text-lime-600 transition">Home</a>
+        <a href="../public/about.php" class="w-full block px-2 py-2 hover:text-lime-600 transition">About Us</a>
+
+        <div class="w-full">
+          <div class="px-2 py-2 flex items-center justify-between hover:text-lime-600 transition cursor-default">
+            <span>Our Products</span>
+          </div>
+          <ul class="border-t mt-1">
+                          <li>
+                <a href="../public/product.php?category=Insecticide"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  Insecticide                </a>
+              </li>
+                          <li>
+                <a href="../public/product.php?category=Fungicide"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  Fungicide                </a>
+              </li>
+                          <li>
+                <a href="../public/product.php?category=Herbicide"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  Herbicide                </a>
+              </li>
+                          <li>
+                <a href="../public/product.php?category=PGR"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  PGR                </a>
+              </li>
+                          <li>
+                <a href="../public/product.php?category=Fertilizer"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  Fertilizer                </a>
+              </li>
+                          <li>
+                <a href="../public/product.php?category=Bio-Fertilizer"
+                   class="block px-4 py-2 hover:bg-lime-100 whitespace-nowrap">
+                  Bio-Fertilizer                </a>
+              </li>
+                      </ul>
+        </div>
+
+        <a href="#gallery" class="w-full block px-2 py-2 hover:text-lime-600 transition">Gallery</a>
+        <a href="contact-us.php" class="w-full block px-2 py-2 hover:text-lime-600 transition">Contact</a>
+
+        <div class="w-full px-2 mt-2">
+          <a href="#contact"
+             class="block w-full text-center bg-blue-900 text-sm text-lime-400 font-semibold px-4 py-3 rounded shadow hover:bg-lime-400 hover:text-blue-900 transition">
+            Contact-Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<section class="relative h-[260px] md:h-[340px] flex items-center justify-center text-center text-white overflow-hidden">
+  <!-- Background Image -->
+  <img src="./../assets/images/contact-banner.jpg" alt="Products"
+       class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Grass Decoration (Optional) -->
+  <div class="absolute top-0 left-0 w-full h-8 md:h-10 bg-[url('./assets/images/grass-top.png')] bg-repeat-x bg-cover"></div>
+
+  <!-- Text Content -->
+  <div class="relative z-10 px-4">
+    <h1 class="text-3xl md:text-5xl font-bold mb-3">Products</h1>
+    <nav class="text-sm md:text-base">
+              
+                  <a href="./index.php" class="hover:text-lime-400">Home</a>
+                                <span class="mx-2 text-gray-300">/</span>
+        
+                  <span class="text-lime-400">Products</span>
+                  </nav>
+  </div>
+</section>
+
+<section class="min-h-screen py-16">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <!-- Page Heading -->
+    <div class="py-12 relative">
+      <div class="-z-10 absolute inset-0 flex pointer-events-none select-none">
+        <span class="uppercase text-[7vw] sm:text-[6vw] md:text-[5vw] font-extrabold text-gray-100 opacity-80 pt-8">
+          Our
+        </span>
+      </div>
+      <p class="text-2xl font-light text-gray-700 mb-2 -mt-4 uppercase">Products</p>
+      <h2 class="text-4xl sm:text-5xl font-semibold md:text-6xl text-lime-600 leading-tight pt-12">
+        Explore Our Agrochemical Solutions
+      </h2>
+        <p class="mt-3 text-gray-600 max-w-2xl">
+          From certified fertilizers to eco-safe insecticides, every product is backed by rigorous research for healthier crops and sustainable yields.
+        </p>
+      </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390394_Root Care.png" alt="Root Care" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Bio-Fertilizer          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Root Care</h2>
+          <p class="text-gray-600 my-2 flex-1">Mycorrhizal Bio-Fertilizer Root Plant Growth</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Bio-Fertilizer</span>
+            </div>
+                        <a href="product.php?id=21" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390352_Kavach 00.00.50.png" alt="Kavach 00:00:50" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fertilizer          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Kavach 00:00:50</h2>
+          <p class="text-gray-600 my-2 flex-1">NPK (00:00:50)
+Micronutrient (Plant Feed)
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fertilizer</span>
+            </div>
+                        <a href="product.php?id=20" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390295_Jackpot.png" alt="Jackpot" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            PGR          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Jackpot</h2>
+          <p class="text-gray-600 my-2 flex-1">Humic 20%, Amino Acid 20%
+Seaweed 10%
+Plant Growth Regulator
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>PGR</span>
+            </div>
+                        <a href="product.php?id=19" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390257_B-Weed 38.png" alt="B-Weed 38" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Herbicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">B-Weed 38</h2>
+          <p class="text-gray-600 my-2 flex-1">2-4 D Ethyl Ester 38% EC Herbicide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Herbicide</span>
+            </div>
+                        <a href="product.php?id=18" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390215_Toronto.png" alt="Toronto" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fungicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Toronto</h2>
+          <p class="text-gray-600 my-2 flex-1">Azoxystrobin 11% &amp;
+Tebuconazole 18.3% SC Broad Spectrum Fungicide
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fungicide</span>
+            </div>
+                        <a href="product.php?id=17" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390156_Tenure.png" alt="Tenure" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fungicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Tenure</h2>
+          <p class="text-gray-600 my-2 flex-1">Tebuconazole 10% +
+Sulphur 65% WG
+Sytemic and Contact Fungicide
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fungicide</span>
+            </div>
+                        <a href="product.php?id=16" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390128_B-Care.png" alt="B-Care" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fungicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">B-Care</h2>
+          <p class="text-gray-600 my-2 flex-1">Carbendazim 12% +
+Mancozeb 63% WP Contact Fungicide
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fungicide</span>
+            </div>
+                        <a href="product.php?id=15" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390099_B-Salf 80.png" alt="B-Salf 80" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fungicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">B-Salf 80</h2>
+          <p class="text-gray-600 my-2 flex-1">Sulphur 80% WDG Fungicide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fungicide</span>
+            </div>
+                        <a href="product.php?id=14" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761390068_B-Boss.png" alt="B-Boss" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Fungicide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">B-Boss</h2>
+          <p class="text-gray-600 my-2 flex-1">Captan 70% +
+Hexaconazole 5% WP Contact Fungicide
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Fungicide</span>
+            </div>
+                        <a href="product.php?id=13" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389804_Power 404.png" alt="Power 404" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Power 404</h2>
+          <p class="text-gray-600 my-2 flex-1">Profenofos 40% +
+Cypermethrin 4% E Insecticide
+</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=8" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389773_Emacron.png" alt="EMACRON" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">EMACRON</h2>
+          <p class="text-gray-600 my-2 flex-1">EMACETIN BENZOATE 1.9% EC</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=7" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389740_Omicron.png" alt="OMICRON" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">OMICRON</h2>
+          <p class="text-gray-600 my-2 flex-1">Dinotefuran 20% SG Systemic Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=6" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389718_Emacin.png" alt="Emacin" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Emacin</h2>
+          <p class="text-gray-600 my-2 flex-1">Emamectin Benzoate 5% SG Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=5" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389570_Infinity.png" alt="Infinity" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Infinity</h2>
+          <p class="text-gray-600 my-2 flex-1">Cypermethrin 25% EC Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=4" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389546_Zeta 505.png" alt="Zeta 505" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Zeta 505</h2>
+          <p class="text-gray-600 my-2 flex-1">Chlorpyriphos 50%+
+Cypermethrin 5% EC Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=3" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389514_Zeta Super.png" alt="Zeta Super" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Zeta Super</h2>
+          <p class="text-gray-600 my-2 flex-1">Chloropyriphos 50% EC Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=2" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1 flex flex-col overflow-hidden">
+        <div class="h-52 w-full flex flex-col items-center border border-bottom border-gray-100 justify-center relative group">
+          <img src="./../assets/images/1761389474_Zeta.png" alt="Zeta" class="h-48 object-contain" />
+          <span class="absolute top-3 right-3 bg-lime-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Insecticide          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">Zeta</h2>
+          <p class="text-gray-600 my-2 flex-1">Chlorpyriphos 20% E.C Systemic Insecticide</p>
+          <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-2 text-sm text-lime-700 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"></circle></svg>
+              <span>Insecticide</span>
+            </div>
+                        <a href="product.php?id=1" class="text-lime-700 font-semibold hover:underline">Details</a>
+          </div>
+        </div>
+      </div>
+          </div>
+  </div>
+</section>
+
+
+<!-- Floating WhatsApp + Messenger -->
+<div class="fixed bottom-6 right-6 space-y-3 z-50 flex flex-col items-end">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/919799466994" target="_blank" rel="noopener noreferrer"
+     class="">
+     <img src="http://localhost/bharatagro/assets/icons/whatsapp.png" alt="WhatsApp" class="h-16">
+  </a>
+</div>
+
+<!-- CTA Section -->
+<section class="max-w-7xl relative py-12 bg-gradient-to-r from-lime-500 to-lime-700 text-white text-center mt-16 mx-auto md:rounded-lg">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-3">Ready to Accelerate Your Growth?</h2>
+    <p class="mb-6 text-lg font-light">Partner with Bharat Agro Chemicals for expert support, innovative crop solutions, and results you can see in every harvest.</p>
+    <a href="/contact-us.php" class="inline-block px-8 py-4 rounded-full bg-white text-lime-700 font-semibold shadow-lg hover:bg-lime-100 transition">Enquire Now</a>
+  </div>
+</section>
+<section class="bg-white pt-16 relative max-w-7xl mx-auto justify-between overflow-visible">
+  <div class="grid grid-cols-2 md:grid-cols-4 items-bottom justify-between max-w-4xl ps-8 md:ps-0 gap-4">
+    <img src="http://localhost/bharatagro/assets/images/footer_logo1.jpg" alt="Bharat Agro Chemicals" class="h-24 object-contain" />
+    <img src="http://localhost/bharatagro/assets/images/footer_logo2.jpg" alt="Bharat Agro Chemicals" class="h-24 object-contain" />
+    <img src="http://localhost/bharatagro/assets/images/footer_logo3.jpg" alt="Bharat Agro Chemicals" class="h-24 object-contain" />
+    <img src="http://localhost/bharatagro/assets/images/footer_logo1.jpg" alt="Bharat Agro Chemicals" class="h-24 object-contain" />
+  </div>
+  <div class="absolute right-0 -bottom-8 md:right-16 lg:right-12">
+    <img src="http://localhost/bharatagro/assets/images/paddy.png" alt="Plant" class="h-56 md:h-64 object-contain" />
+  </div>
+</section>
+
+<footer class="bg-green-800 text-white relative overflow-hidden px-10 py-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 z-10 relative">
+    <!-- Logo and description -->
+    <div class="space-y-6">
+      <img src="http://localhost/bharatagro/assets/images/logo.png" alt="Bharat Agro Chemicals" class="h-20 w-auto" />
+      <p class="max-w-xs">
+        With a vast experience of over a decade we are proving best products.
+        Our team is a group of professionals like scientists, engineers and farmers.
+      </p>
+    </div>
+    <!-- Important Links -->
+    <div class="border-l border-green-700 pl-8">
+      <h3 class="text-xl font-bold mb-6">Important Links</h3>
+      <ul class="space-y-3">
+        <li><a href="#" class="hover:text-green-300">About Us</a></li>
+        <li><a href="#" class="hover:text-green-300">Our Products</a></li>
+        <li><a href="#" class="hover:text-green-300">Gallery</a></li>
+        <li><a href="#" class="hover:text-green-300">Contact Us</a></li>
+        <li><a href="#" class="hover:text-green-300">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <!-- Contact Info -->
+    <div class="border-l border-green-700 pl-8">
+      <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+      <ul class="space-y-4">
+        <li class="flex items-center space-x-4">
+          <div class="bg-yellow-400 rounded-full p-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke-opacity=".3" />
+              <path d="M12 2v10l6 6" />
+            </svg>
+          </div>
+          <div>
+            <strong class="block">Corp. OFFICE:</strong>
+            UL-15, 16, 17, Pattani Plaza, Dairy Road, Nilambagh Circle, Bhawnagar - 364002, Gujrat
+          </div>
+        </li>
+        <li class="flex items-center space-x-4">
+          <div class="bg-yellow-400 rounded-full p-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4z" fill-opacity=".3" />
+              <path d="M22 7L12 13 2 7" />
+            </svg>
+          </div>
+          <div>
+            <strong class="block">EMAIL:</strong>
+            bharatagrochemicals24@gmail.com
+          </div>
+        </li>
+        <li class="flex items-center space-x-4">
+          <div class="bg-yellow-400 rounded-full p-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M3 10h5l3 7h5l4-11" />
+              <circle cx="6" cy="20" r="2" />
+              <circle cx="18" cy="20" r="2" />
+            </svg>
+          </div>
+          <div>
+            <strong class="block">Help Line NO.:</strong>
+            +91 8818002155
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-14 border-t border-green-700 pt-6 flex flex-col md:flex-row md:justify-between items-center text-green-300 text-sm font-medium">
+  
+    <p>© Copyright 2025. All Rights Reserved by Bharat Agro Chemicals</p>
+    <p class="mt-2 md:mt-0 font-semibold text-green-500">Powered By <a href="https://dhamutech.com"><span class="font-semibold text-white">Dhamutech</span></a></p>
+  </div>
+</footer>
 </body>
-</html>
