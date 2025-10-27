@@ -1,13 +1,14 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+require_once '../includes/db.php';
+include '../includes/header.php'; 
 
-<?php
 $pageTitle = "Our Products";
-$pageImage = "./assets/images/product-banner.jpg";
+$pageImage = "../assets/images/product-banner.jpg";
 $breadcrumb = [
-  ['name' => 'Home', 'url' => './index.php'],
+  ['name' => 'Home', 'url' => '../index.php'],
   ['name' => 'Products']
 ];
-include 'includes/page-banner.php';
+include '../includes/page-banner.php';
 ?>
 
 <!-- Product grid -->
@@ -41,4 +42,5 @@ $products = $db->query("SELECT image, name FROM products WHERE image IS NOT NULL
 </section>
 
 
-<?php include 'includes/footer.php'; ?>
+<?php 
+include '../includes/footer.php'; ?>

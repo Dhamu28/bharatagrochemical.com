@@ -95,7 +95,7 @@ $is_logged = is_logged_in();
       <!-- Desktop Menu -->
       <nav class="hidden md:flex flex-1 justify-center">
         <ul class="flex items-center gap-8">
-          <li><a href="#" class="hover:text-lime-600 transition">Home</a></li>
+          <li><a href="../index.php" class="hover:text-lime-600 transition">Home</a></li>
           <li><a href="../public/about.php" class="hover:text-lime-600 transition">About Us</a></li>
           <li class="relative group">
             <div class="flex items-center hover:text-lime-600 cursor-pointer">
@@ -116,7 +116,7 @@ $is_logged = is_logged_in();
               <?php endwhile; ?>
             </ul>
           </li>
-          <li><a href="#gallery" class="hover:text-lime-600 transition">Gallery</a></li>
+          <li><a href="../public/gallery.php" class="hover:text-lime-600 transition">Gallery</a></li>
           <li><a href="contact-us.php" class="hover:text-lime-600 transition">Contact</a></li>
         </ul>
       </nav>
